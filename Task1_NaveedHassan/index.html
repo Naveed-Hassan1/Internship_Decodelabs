@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PulseBoard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="topbar">
+      <div class="brand">
+        <div class="brand-icon">P</div>
+        <span>PulseBoard</span>
+      </div>
+      <nav class="nav-links" id="navLinks">
+        <a href="#">Overview</a>
+        <a href="#">Projects</a>
+        <a href="#">Team</a>
+        <a href="#">Reports</a>
+      </nav>
+      <div class="topbar-actions">
+        <button class="icon-btn">🔔</button>
+        <button class="icon-btn">✉</button>
+        <button class="menu-btn" id="menuBtn">☰</button>
+        <div class="profile-pill">
+          <div class="avatar">JD</div>
+          <span>Naveed Hassan</span>
+        </div>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="hero-panel">
+        <div>
+          <p class="eyebrow">Today’s dashboard</p>
+          <h1>Welcome back, Naveed 👋</h1>
+          <p class="hero-text">You’ve completed 78% of your weekly goals. Keep pushing forward.</p>
+          <div class="hero-actions">
+            <button class="btn btn-primary">View report</button>
+            <button class="btn btn-secondary">New task</button>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="progress-ring">
+            <div class="progress-ring-inner">78%</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats-grid">
+        <article class="stat-card">
+          <p>Tasks done</p>
+          <h2>24</h2>
+          <span class="trend positive">↑ 12% this week</span>
+        </article>
+        <article class="stat-card">
+          <p>Hours focused</p>
+          <h2>18.4</h2>
+          <span class="trend positive">↑ 3.1 h today</span>
+        </article>
+        <article class="stat-card">
+          <p>Team score</p>
+          <h2>94.2</h2>
+          <span class="trend positive">↑ 2.8% avg</span>
+        </article>
+      </section>
+
+      <section class="content-grid">
+        <div class="panel activity-panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Performance</p>
+              <h3>Weekly activity</h3>
+            </div>
+            <button class="btn btn-text">This month</button>
+          </div>
+          <div class="bars">
+            <div class="bar-group"><span>Mon</span><div class="bar"><div style="height: 55%"></div></div></div>
+            <div class="bar-group"><span>Tue</span><div class="bar"><div style="height: 75%"></div></div></div>
+            <div class="bar-group"><span>Wed</span><div class="bar"><div style="height: 65%"></div></div></div>
+            <div class="bar-group"><span>Thu</span><div class="bar"><div style="height: 90%"></div></div></div>
+            <div class="bar-group"><span>Fri</span><div class="bar"><div style="height: 80%"></div></div></div>
+            <div class="bar-group"><span>Sat</span><div class="bar"><div style="height: 40%"></div></div></div>
+            <div class="bar-group"><span>Sun</span><div class="bar"><div style="height: 50%"></div></div></div>
+          </div>
+        </div>
+
+        <div class="panel tasks-panel">
+          <div class="panel-header">
+            <div>
+              <p class="eyebrow">Priority tasks</p>
+              <h3>Today’s plan</h3>
+            </div>
+            <button class="btn btn-text">+ Add</button>
+          </div>
+          <ul class="task-list">
+            <li><label><input type="checkbox" checked><span>Finalize landing page copy</span></label><time>09:00</time></li>
+            <li><label><input type="checkbox"><span>Review design feedback</span></label><time>11:30</time></li>
+            <li><label><input type="checkbox" checked><span>Sync with product team</span></label><time>13:00</time></li>
+            <li><label><input type="checkbox"><span>Prepare sprint update deck</span></label><time>16:00</time></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

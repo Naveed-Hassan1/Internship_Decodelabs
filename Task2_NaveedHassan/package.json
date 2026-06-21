@@ -1,0 +1,12 @@
+{
+  "name": "p2-backend-api",
+  "version": "1.0.0",
+  "description": "Simple backend API for project 2",
+  "main": "P2.js",
+  "scripts": {
+    "start": "node P2.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
