@@ -1,0 +1,18 @@
+{
+  "name": "project3-database-integration",
+  "version": "1.0.0",
+  "description": "Backend with MongoDB integration and CRUD APIs",
+  "main": "Backend.js",
+  "scripts": {
+    "start": "node Backend.js",
+    "dev": "nodemon Backend.js"
+  },
+  "dependencies": {
+    "cors": "^2.9.0",
+    "express": "^4.19.0",
+    "mongoose": "^8.5.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.21.0"
+  }
+}
